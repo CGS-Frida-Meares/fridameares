@@ -1,0 +1,242 @@
+j8<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Home</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+  <script>
+  </script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #2d132c;
+      padding: 0;
+      margin:0;
+    }
+    #top {
+      width: 100%;
+      height: 2000px;
+      padding: 0;
+      margin:0;
+      padding-bottom:1000px;
+    }
+    .divs {
+      float: left;
+      margin: 5px;
+    }
+    #laws {
+      top-padding: 300px;
+      padding: 10px;
+      background-color: #801336;
+      width:38%;
+      height: 270px;
+      border-radius: 25px;
+    }
+    #bottom {
+      width:100%;
+      height: 1500px;
+      padding: 10px;
+    }
+    
+
+    
+    #back {
+      color: white;
+      text-align: center;
+      margin: auto;
+    }
+    #arrow {
+      font-size: 50px;
+    }
+    button {
+      color: white;
+      margin: auto;
+      background-color: transparent;
+      border-color: transparent;
+      text-align: center;
+    }
+    #impairs {
+      
+      top-padding: 300px;
+      padding: 10px;
+      background-color: #ee4540;
+      width:58%;
+      height: 270px;
+      border-radius: 25px;
+      justify-content: center;
+    }
+    
+    
+    #do {
+      top-padding: 300px;
+      background-color: #801336;
+      padding: 10px;
+      width:38%;
+      height: 230px;
+      border-radius: 25px;
+    }
+    #stat {
+      top-padding: 300px;
+      padding: 10px;
+      background-color: #c72c41;
+      width:58%;
+      height: 230px;
+      border-radius: 25px;
+    }
+    #math {
+      top-padding: 300px;
+      background-color: #801336;
+      width:30%;
+      height: 250px;
+      border-radius: 25px;
+      text-align: center;
+    }
+    #source {
+      top-padding: 300px;
+      background-color: #ee4540;
+      width:68%;
+      height: 250px;
+      border-radius: 25px;
+      text-align: center;
+    }
+    input {
+      width: 90%;
+      height: 30px;
+      background-color: #801336;
+      border-width: 1px;
+      border-color: black;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="top">
+    <iframe width="100%" height="1200px" src="https://www.youtube.com/embed/rhvIMJNOXmc?autoplay=1l;start=372&end=400;controls=0"></iframe>
+  </div>
+  
+  <div id="bottom">
+
+    <div id="back"><button onclick="myFunction()">
+      <span id="arrow">&#8657;</span>
+
+      <h2>Back to video</h2>
+    </button></div>
+    <div onclick='laws()' class="divs" id="laws">
+      <h2 id="lawT">Laws</h2>
+      <ul>
+        <li>You are not to use your phone at all as a P1 driver or as a Learner driver. This includes no loudspeaker operations, GPS, text messaging or even using hands-free mode to answer/receive calls.</li>
+        <li>This includes no loudspeaker operations, GPS, text messaging or even using hands-free mode to answer/receive calls</li>
+        <li>If you are caught on your phone you face <b>3 months not drinving</b></li>  
+      </ul> 
+      There are no cameras inplace in some areas to catch people on phones so it can be likely you will be caught 
+    </div>
+    <div onclick='impairs()' class="divs" id="impairs">
+      <h2 id="impairsT">The effects</h2>
+      Using your mobile phone is a distraction. It impairs:
+      <ul>
+        <li><b>Reaction time</b> Multitasking when driving slows down reaction time, which can be the difference between swerving in time to avoid a pedestrian or causing a deadly accident</li>
+        <li>Ability to judge distances between cars and other objects</li>
+        <li> Maintaining correct road positions and the required speed limits</li>  
+        <li>Awareness of other road users</li>
+        <li><b>Visual search patterns.</b> It is hard to assess the environmental conditions and decide where to turn or what distances to keep when half the focus is on a phone’s screen.</li>
+        <li><b>Hinders concentration.</b> Checking a handset while driving hinders concentration, which is why using a mobile phone when driving is so dangerous.</li>
+
+      </ul> 
+      Studies reveal that young drivers who use their phones while driving are not capable of handling the various demands of multiple mental, perceptual, and physical tasks involve
+     
+    </div>
+    <div onclick='stat()' class="divs" id="stat">
+      <h2 id="statT">Statistics</h2>
+      <ul>
+        <li>Using your phone quadruples the probability of an accident.</li>
+        <li>1/4 crashes are caused by people using there mobile phones</li>
+        <li>Studies have shown that younger drivers are at a significantly higher risk when it comes to using their phones while driving</li>
+      </ul>
+        Studies reveal that young drivers who use their phones while driving are not capable of handling the various demands of multiple mental, perceptual, and physical tasks involve.
+    </div>
+    <div onclick='wdo()' class="divs" id="do">
+      <h2 id="doT">What you should do</h2>
+      <ul>
+        <li>Not pick up calls in the car and if you must, stop the car and take the call</li>
+        <li>You should not look up numbers, text, read text messages or anything that involves writing or reading </li>
+        <li>You should place your phone in the center console and only look or use it when you have stopped driving</li>
+      </ul>
+    </div>
+    <div onclick='math()' class="divs" id="math">
+      <h2 id="mathT">Distance calculator</h2>
+      <input id="numb" value="Speed going at (in kilometres per second)?">
+      <br><br></br>
+      <input id="numb2" value="Time looking at phone (in seconds)?">
+      <br></br>
+      <button type="button" onclick="myFunction2()">Submit</button>
+      <p id="demo"></p>
+    </div>
+    <div onclick='source()' class="divs" id="source">
+      <h2 id="sourceT">Sources</h2>
+      <ul>
+        <li><a href="https://research.qut.edu.au/carrsq/wp-content/uploads/sites/45/2017/12/Mobile-phone-distraction-email.pdf">https://research.qut.edu.au</a></li>
+        <li><a href="https://www.defensivedriving.com.au/using-mobile-phone-driving-dangerous/#:~:text=Why%20Using%20a%20Mobile%20Phone%20When%20Driving%20Is%20Dangerous&text=Checking%20one's%20mobile%20phone%20while,mobile%20phones%20on%20the%20road">https://www.defensivedriving.com.au</a></li>
+        <li>Studies have shown that younger drivers are at a significantly higher risk when it comes to using their phones while driving</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    var count = 0;
+    var current = 1;
+    function myFunction2() {
+
+      // Get the value of the input field with id="numb"
+      var x = Number(document.getElementById("numb").value);
+      var y = Number(document.getElementById("numb2").value);
+
+      var s = x/3.6;
+      var d = s * y;
+
+      document.getElementById("demo").innerHTML = String(d);
+    }
+    function myFunction(){
+      
+      current = 1;
+      console.log(String(current));
+      location.href='#top';
+    }
+    $(document).ready(function() {
+      $(function () {
+
+        // show hide subnav depending on scroll direction
+        var position = $(window).scrollTop();
+
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+
+          if (scroll > position) {
+
+            count = count + 1;
+            if (count >= 30) {
+              if (current == 1) {
+                  console.log(String(count));   
+                  current = 2;
+                  window.location = '#bottom';
+                  count = 0;
+              }
+                      
+
+            } else {
+              count = count + 1;
+                
+            }
+          }
+        });
+      });
+    });
+
+
+  </script>
+</body>
+</html>
